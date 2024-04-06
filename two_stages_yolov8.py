@@ -9,7 +9,7 @@ import numpy as np
 def process_image_and_extract_text(source_image_path, ocr):
     try:
         model = YOLO('best.pt')
-        results = model([source_image_path])
+        results = model.predict(source_image_path, save=True, imgsz=640, conf=0.1)
         for result in results:
             boxes = result.boxes
         
@@ -43,7 +43,7 @@ def process_image_and_extract_text(source_image_path, ocr):
         try:
             result = ocr.ocr(tmp_file.name, cls=True)
             print('result ', result)
-            print('ocr: ', time.time() - start)
+            print('ocr time: ', time.time() - start)
             # Ensure to clean up the temporary file after processing
             os.remove(tmp_file.name)
 
@@ -53,8 +53,18 @@ def process_image_and_extract_text(source_image_path, ocr):
                 res = result[idx]
                 for line in res:
                     extracted_text += line[1][0]
-            print('extracted_text ', extracted_text)
             cleaned_text = re.sub(r"[^a-zA-Z0-9]", "", extracted_text)
+            if len(cleaned_text) > 2 and cleaned_text[2] == '8':
+                cleaned_text = cleaned_text[:2] + 'B' + cleaned_text[3:]
+
+            # Replacing 'I' with '1' in the entire string but before position 2
+            modified_text = ''
+            for i, c in enumerate(cleaned_text):
+                if i !=2 and c == 'I':
+                    modified_text += '1'
+                else:
+                    modified_text += c
+            # print(modified_text)
         except:
             return "No detect character in License Plate"
-    return cleaned_text
+    return modified_text
