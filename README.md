@@ -24,17 +24,13 @@ Before you can run this application, you need to ensure your environment is set 
 1. Clone this repository to your local machine.
 2. Install the required dependencies.
 ```bash
-    pip install ultralytics
-    pip install paddlepaddle
-    pip install paddleocr
-    pip install fastapi
-    pip install python-multipart
+    pip install -r requirements.txt
 ```
 ## Running the Application
 
 To run the application, use the following command:
 ```
-python main2.py
+    python main2.py
 ```
 
 This will start the FastAPI application on port 5000, allowing you to upload images and extract text via the `/upload-image` endpoint.
