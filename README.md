@@ -2,8 +2,9 @@
 
 This project provides a FastAPI application designed to upload an image and extract text from it using a two-stage process involving YOLOv8 for detection and PaddleOCR for Optical Character Recognition (OCR). It's specifically tailored for scenarios where precise text extraction from images is required, leveraging the power of state-of-the-art machine learning models.
 
-Validation: [Link Colab](https://colab.research.google.com/drive/1XRvt1kLTq47-yJJTWL_KVn3lkMRHTOdB?usp=sharing)
+Validation + Create Dataset: 
 
+<a href="https://colab.research.google.com/drive/1irTA_DqFmBsXHaOGUhoOcljrpe3SrBR6?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 ## Features
 
