@@ -4,7 +4,12 @@ This project provides a FastAPI application designed to upload an image and extr
 
 Validation + Create Dataset: 
 
-<a href="https://colab.research.google.com/drive/1irTA_DqFmBsXHaOGUhoOcljrpe3SrBR6?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+<a href="https://colab.research.google.com/drive/1irTA_DqFmBsXHaOGUhoOcljrpe3SrBR6?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab - Validation"></a>
+
+
+Use model after train: 
+
+<a href="https://colab.research.google.com/drive/17EX_9JnDx_xkk0I44_4w2ouA2rSEo7ss?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 ## Features
 
