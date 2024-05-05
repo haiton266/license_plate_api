@@ -11,6 +11,9 @@ Use model after train:
 
 <a href="https://colab.research.google.com/drive/17EX_9JnDx_xkk0I44_4w2ouA2rSEo7ss?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
+Train:
+<a href="https://colab.research.google.com/drive/14tAjqJatiUwBCPH3CTvoZUA2ytHpXbyU?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
 ## Features
 
 - **Image Upload**: Allows users to upload images via a FastAPI endpoint.
